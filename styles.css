@@ -1,0 +1,192 @@
+:root {
+    --blanquito: white;
+    --oscuro: black;
+    --color3: #3F51B5;
+    --color4: rgb(197, 195, 230);
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header,
+main,
+footer {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.encabezado img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    width: 10vw;
+}
+
+h1 {
+    text-align: center;
+    align-items: center;
+    padding: 5rem;
+}
+.imgh1 img {
+    width: 30vh;
+}
+
+@media (max-width: 481px) {
+    .imgh1 img {
+        width: 20vh;
+    }
+}
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid var(--oscuro);
+}
+
+.navegacion {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    align-items: center;
+    padding: 10px;
+}
+
+@media (max-width: 481px) {
+    .navegacion {
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+a[href="#"] {
+    text-decoration: none;
+    border: .5px solid gray;
+    border-radius: 5px;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+    color: var(--oscuro);
+    padding: .5rem;
+}
+
+main {
+    background-image: url(./assets/fondo.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    text-align: center;
+}
+
+section {
+    text-align: center;
+}
+
+.cards {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+@media (max-width: 768px) {
+    .cards {
+        flex-wrap: wrap;
+    }
+}
+
+.card {
+    width: 33.3%;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 50vh;
+    border: 1px solid black;
+    object-fit: cover;
+}
+
+@media (max-width: 800px) {
+    .card img {
+        height: 20vh;
+        width: 20vh;
+    }
+}
+
+.card p {
+    background-color: var(--color4);
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+.Game-container {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .Game-container {
+        gap: 5rem;
+    }
+}
+
+@media (max-width: 481px) {
+    .Game-container {
+        gap: 2rem;
+    }
+}
+
+.plataformas {
+    background-color: var(--color4);
+    border: 1px solid black;
+}
+
+ul {
+    padding: 2rem 8rem 4rem 2rem;
+}
+
+.games {
+    background-color: var(--color4);
+    border: 1px solid black;
+}
+
+table {
+    margin: 1rem 1rem .1rem 1rem;
+    background-color: white;
+}
+
+th,
+td,
+tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+footer {
+    background-color: var(--oscuro);
+    position: relative;
+}
+
+.foot {
+    color: var(--blanquito);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+form {
+    text-align: end;
+}
